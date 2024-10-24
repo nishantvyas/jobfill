@@ -73,7 +73,8 @@
 - [ ] Develop job application autofill feature
 
 ## 13. UI Enhancements
-- [ ] Design and implement full popup interface
+- [x] Design and implement full popup interface
+- [x] Add settings icon to popup for easy access to settings page
 - [ ] Create comprehensive settings page
 - [ ] Add user data editing capabilities
 
