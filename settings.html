@@ -6,13 +6,79 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .upload-container, .extracted-data {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #file-input {
+      display: none;
+    }
+    #upload-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    #upload-status {
+      margin-top: 10px;
+    }
+    .extracted-data {
+      text-align: left;
+    }
+    .extracted-data input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #save-button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 20px auto 0;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Resume AutoFill!</h1>
-  <p>This is the settings page. Here you can configure your resume information and preferences.</p>
-  <!-- Add more settings content here -->
+  <p>This is the settings page. Here you can upload your resume and configure your preferences.</p>
+  
+  <div class="upload-container">
+    <h2>Upload Your Resume</h2>
+    <p>Supported formats: PDF, DOCX (Max size: 10MB)</p>
+    <input type="file" id="file-input" accept=".pdf,.docx">
+    <button id="upload-button">Choose File</button>
+    <div id="upload-status"></div>
+  </div>
+
+  <div class="extracted-data" id="extracted-data" style="display: none;">
+    <h2>Extracted Information</h2>
+    <p>Please review and edit the extracted information:</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+    <button id="save-button">Save Changes</button>
+  </div>
+
   <script src="settings.js"></script>
 </body>
 </html>
