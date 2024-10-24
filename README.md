@@ -7,26 +7,19 @@ The installation process begins when a user adds the extension from the Chrome W
 
 1. The extension automatically redirects the user to the settings page
 2. A welcome screen is displayed with setup instructions
+    2.1 Resume Upload Interface
+    - Supported file formats: PDF, DOCX
+    - Maximum file size: 10MB
+    - Upload progress indicator with percentage
+    - Success/Error notifications
+    - File validation checks
 3. The extension initializes an empty data structure in localStorage to store user information
-4. Extension permissions are requested for:
+
+4. Extension shall have permissions for:
    - Storage access
    - Active tab access
    - API communication
 
-### 1.2 Settings Page Setup
-The settings page serves as the primary configuration interface:
-
-1. Welcome Message Display
-   - Clear instructions for getting started
-   - Step-by-step setup guide
-   - Feature overview
-
-2. Resume Upload Interface
-   - Supported file formats: PDF, DOCX
-   - Maximum file size: 10MB
-   - Upload progress indicator with percentage
-   - Success/Error notifications
-   - File validation checks
 
 ## 2. Resume Processing
 
